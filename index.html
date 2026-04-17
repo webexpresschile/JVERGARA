@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuNombre - Conexión Proveedores & Restaurantes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos opcionales (Font Awesome) -->
+    <script src="https://kit.fontawesome.com/tu-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header / Navegación -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="#home">TuNombre</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Conectando proveedores y restaurantes en un solo punto de venta</h2>
+            <p>Soy tu aliado estratégico para facilitar la cadena de suministro gastronómico en Chile.</p>
+            <a href="#contact" class="btn-primary">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about-content">
+                <img src="assets/logo.png" alt="Tu foto o logo" class="about-img">
+                <div>
+                    <p>Con más de X años de experiencia en el sector de distribución y ventas B2B, he trabajado con una amplia red de proveedores de alimentos, bebidas e insumos, así como con restaurantes de diversos formatos (desde fondas tradicionales hasta cadenas de franquicia).</p>
+                    <p>Mi enfoque está en generar valor mediante:</p>
+                    <ul>
+                        <li>Negociación de mejores precios y condiciones.</li>
+                        <li>Logística eficiente y puntual.</li>
+                        <li>Asesoría en selección de productos según el concepto del restaurante.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2>Portafolio de Proveedores & Restaurantes</h2>
+            <p class="section-subtitle">Algunos de los aliados con los que he trabajado:</p>
+            <div class="portfolio-grid">
+                <!-- Proveedores -->
+                <div class="portfolio-item">
+                    <img src="assets/proveedor1.png" alt="Proveedor 1">
+                    <h3>Proveedor A</h3>
+                    <p>Especializado en productos secos y enlatados.</p>
+                    <a href="https://ejemplo-proveedor1.cl" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/proveedor2.png" alt="Proveedor 2">
+                    <h3>Proveedor B</h3>
+                    <p>Distribuidor de carnes y pescados frescos.</p>
+                    <a href="https://ejemplo-proveedor2.cl" target="_blank">Visitar sitio</a>
+                </div>
+                <!-- Restaurantes -->
+                <div class="portfolio-item">
+                    <img src="assets/restaurante1.png" alt="Restaurante 1">
+                    <h3>Restaurante X</h3>
+                    <p>Cocina chilena contemporánea.</p>
+                    <a href="https://ejemplo-restaurante1.cl" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/restaurante2.png" alt="Restaurante 2">
+                    <h3>Restaurante Y</h3>
+                    <p>Parrillada y asados al estilo tradicional.</p>
+                    <a href="https://ejemplo-restaurante2.cl" target="_blank">Visitar sitio</a>
+                </div>
+                <!-- Puedes agregar más elementos duplicando los bloques acima -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Servicios que ofrezco</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-handshake icon"></i>
+                    <h3>Intermediación comercial</h3>
+                    <p>Actuo como enlace directo entre proveedores y restaurantes, simplificando procesos de compra y venta.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck icon"></i>
+                    <h3>Gestión logística</h3>
+                    <p>Coordinación de entregas, seguimiento de pedidos y optimización de rutas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line icon"></i>
+                    <h3>Asesoría de producto</h3>
+                    <p>Recomiendo los mejores insumos según el menú, temporada y presupuesto del cliente.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comment-dollar icon"></i>
+                    <h3>Negociación de condiciones</h3>
+                    <p>Obtengo descuentos por volumen, plazos de pago favorables y acuerdos de exclusividad cuando corresponde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes un producto que ofrecer o buscas nuevos insumos para tu restaurante? ¡Escríbeme!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono (opcional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> TuNombre. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

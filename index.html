@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuNombre - Conexión Proveedores & Restaurantes</title>
+    <title>JVERGARA | Conectando Proveedores y Restaurantes en Chile</title>
+    <meta name="description" content="Vendedor multimarca especializado en alimentos y restaurantes. Conectamos proveedores con cadenas de comida optimizando pedidos y logística.">
     <link rel="stylesheet" href="style.css">
-    <!-- Iconos opcionales (Font Awesome) -->
-    <script src="https://kit.fontawesome.com/tu-kit.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header / Navegación -->
-    <header>
-        <div class="container">
-            <h1 class="logo"><a href="#home">TuNombre</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">J<span class="logo-accent">V</span>ERGARA</span>
+                    <span class="logo-tagline">Conexión Food Service</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proveedores" class="nav-link">Proveedores</a></li>
+                    <li><a href="#restaurantes" class="nav-link">Restaurantes</a></li>
+                    <li><a href="#contacto" class="nav-link btn-nav">Contacto</a></li>
                 </ul>
             </nav>
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -28,136 +39,577 @@
         </div>
     </header>
 
-    <!-- Sección Inicio -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <h2>Conectando proveedores y restaurantes en un solo punto de venta</h2>
-            <p>Soy tu aliado estratégico para facilitar la cadena de suministro gastronómico en Chile.</p>
-            <a href="#contact" class="btn-primary">Contáctame</a>
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal">
+                <span class="hero-badge">🍽️ Food Service B2B</span>
+                <h1 class="hero-title">
+                    Un Solo Vendedor,<br>
+                    <span class="gradient-text">Múltiples Proveedores</span>,<br>
+                    Cero Complejidad
+                </h1>
+                <p class="hero-subtitle">
+                    Simplifico la cadena de suministro gastronómico. Conecto proveedores de alimentos con 
+                    restaurantes y cadenas de comida, concentrando pedidos y optimizando logística.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <i class="fas fa-handshake"></i> Soy Proveedor
+                    </a>
+                    <a href="#contacto" class="btn btn-outline btn-lg">
+                        <i class="fas fa-utensils"></i> Soy Restaurante
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proveedores</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Restaurantes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Años Exp.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image scroll-reveal">
+                <div class="hero-card">
+                    <div class="card-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Pedido Concentrado</h3>
+                    <p>Un solo pedido, múltiples proveedores, una sola factura</p>
+                    <ul class="card-benefits">
+                        <li><i class="fas fa-check"></i> Menos trámites</li>
+                        <li><i class="fas fa-check"></i> Mejor logística</li>
+                        <li><i class="fas fa-check"></i> Precios negociados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
         </div>
     </section>
 
-    <!-- Sección Sobre mí -->
-    <section id="about" class="section">
+    <!-- Problemática / Por Qué -->
+    <section id="por-que" class="section section-problematica">
         <div class="container">
-            <h2>Sobre mí</h2>
-            <div class="about-content">
-                <img src="assets/logo.png" alt="Tu foto o logo" class="about-img">
-                <div>
-                    <p>Con más de X años de experiencia en el sector de distribución y ventas B2B, he trabajado con una amplia red de proveedores de alimentos, bebidas e insumos, así como con restaurantes de diversos formatos (desde fondas tradicionales hasta cadenas de franquicia).</p>
-                    <p>Mi enfoque está en generar valor mediante:</p>
-                    <ul>
-                        <li>Negociación de mejores precios y condiciones.</li>
-                        <li>Logística eficiente y puntual.</li>
-                        <li>Asesoría en selección de productos según el concepto del restaurante.</li>
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">💡 ¿Por Qué Trabajarme?</span>
+                <h2 class="section-title">Resuelvo los 3 Grandes Problemas del Food Service</h2>
+                <p class="section-subtitle">La cadena de suministro tradicional es compleja. Yo la simplifico.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card scroll-reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>❌ Problema: Exceso de Trámites</h3>
+                    <p class="problem-desc">
+                        Tratar con 10+ proveedores significa 10+ órdenes de compra, 10+ facturas, 
+                        10+ coordinaciones de pago.
+                    </p>
+                    <div class="problem-solution">
+                        <i class="fas fa-arrow-right"></i>
+                        <strong>✅ Solución:</strong> Un solo contacto, un solo pedido, una sola factura.
+                    </div>
+                </div>
+                <div class="problem-card scroll-reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>❌ Problema: Logística Fragmentada</h3>
+                    <p class="problem-desc">
+                        Cada proveedor tiene su propio horario de entrega. Recepción caótica, 
+                        personal dedicado solo a recibir.
+                    </p>
+                    <div class="problem-solution">
+                        <i class="fas fa-arrow-right"></i>
+                        <strong>✅ Solución:</strong> Entrega coordinada, horarios optimizados, menos tiempo de recepción.
+                    </div>
+                </div>
+                <div class="problem-card scroll-reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>❌ Problema: Precios No Negociados</h3>
+                    <p class="problem-desc">
+                        Comprar por separado significa menos poder de negociación. 
+                        Cada proveedor cobra precio de lista.
+                    </p>
+                    <div class="problem-solution">
+                        <i class="fas fa-arrow-right"></i>
+                        <strong>✅ Solución:</strong> Volumen consolidado = mejores precios y condiciones.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section id="como-funciona" class="section section-como bg-gradient">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">🔄 Proceso Simple</span>
+                <h2 class="section-title">¿Cómo Funciona?</h2>
+                <p class="section-subtitle">4 pasos para optimizar tu cadena de suministro</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-clipboard-list"></i> Recepción de Necesidades</h3>
+                        <p>El restaurante me envía su lista de requerimientos (productos, cantidades, frecuencia).</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-search"></i> Búsqueda Multi-Proveedor</h3>
+                        <p>Consulto mi red de 50+ proveedores para encontrar los mejores productos y precios.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-file-contract"></i> Pedido Consolidado</h3>
+                        <p>Armo un solo pedido con productos de múltiples proveedores. Una orden, una factura.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-truck"></i> Entrega Coordinada</h3>
+                        <p>Coordino la logística para que todo llegue en tiempo y forma al restaurante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section section-servicios">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">🛠️ Lo Que Hago</span>
+                <h2 class="section-title">Servicios Especializados</h2>
+                <p class="section-subtitle">Todo lo que necesitas para optimizar tu cadena de suministro</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Intermediación Comercial</h3>
+                    <p>Actúo como enlace directo entre proveedores y restaurantes, simplificando procesos de compra y venta.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Negociación de precios</li>
+                        <li><i class="fas fa-check-circle"></i> Condiciones de pago</li>
+                        <li><i class="fas fa-check-circle"></i> Acuerdos de volumen</li>
+                    </ul>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Gestión Logística</h3>
+                    <p>Coordinación completa de entregas, seguimiento de pedidos y optimización de rutas de distribución.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Coordinación de horarios</li>
+                        <li><i class="fas fa-check-circle"></i> Tracking de pedidos</li>
+                        <li><i class="fas fa-check-circle"></i> Optimización de rutas</li>
+                    </ul>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Asesoría de Producto</h3>
+                    <p>Recomendación de los mejores insumos según el menú, temporada y presupuesto del restaurante.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Selección por concepto</li>
+                        <li><i class="fas fa-check-circle"></i> Relación calidad-precio</li>
+                        <li><i class="fas fa-check-circle"></i> Tendencias del mercado</li>
+                    </ul>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-comments-dollar"></i>
+                    </div>
+                    <h3>Negociación de Condiciones</h3>
+                    <p>Obtención de descuentos por volumen, plazos de pago favorables y acuerdos de exclusividad.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Descuentos por volumen</li>
+                        <li><i class="fas fa-check-circle"></i> Plazos extendidos</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusividad cuando corresponde</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Portafolio -->
-    <section id="portfolio" class="section bg-light">
+    <!-- Proveedores -->
+    <section id="proveedores" class="section section-proveedores bg-light">
         <div class="container">
-            <h2>Portafolio de Proveedores & Restaurantes</h2>
-            <p class="section-subtitle">Algunos de los aliados con los que he trabajado:</p>
-            <div class="portfolio-grid">
-                <!-- Proveedores -->
-                <div class="portfolio-item">
-                    <img src="assets/proveedor1.png" alt="Proveedor 1">
-                    <h3>Proveedor A</h3>
-                    <p>Especializado en productos secos y enlatados.</p>
-                    <a href="https://ejemplo-proveedor1.cl" target="_blank">Visitar sitio</a>
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">📦 Para Proveedores</span>
+                <h2 class="section-title">Amplía Tu Alcance Comercial</h2>
+                <p class="section-subtitle">Llega a más restaurantes sin aumentar tu fuerza de ventas</p>
+            </div>
+            <div class="proveedores-grid">
+                <div class="proveedor-content scroll-reveal">
+                    <h3>¿Qué Ganas Como Proveedor?</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <div>
+                                <strong>Mayor Cobertura</strong>
+                                <p>Accede a restaurantes que no podrías alcanzar con tu equipo actual.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-coins"></i>
+                            <div>
+                                <strong>Menor Costo de Adquisición</strong>
+                                <p>Sin gastos de ventas directas, comisiones solo por venta cerrada.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <strong>Volumen Consolidado</strong>
+                                <p>Pedidos más grandes al concentrar demanda de múltiples restaurantes.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Focus en Producción</strong>
+                                <p>Tú te encargas de producir, yo me encargo de vender y distribuir.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-right"></i> Quiero Ser Proveedor
+                    </a>
                 </div>
-                <div class="portfolio-item">
-                    <img src="assets/proveedor2.png" alt="Proveedor 2">
-                    <h3>Proveedor B</h3>
-                    <p>Distribuidor de carnes y pescados frescos.</p>
-                    <a href="https://ejemplo-proveedor2.cl" target="_blank">Visitar sitio</a>
+                <div class="proveedor-categorias scroll-reveal">
+                    <h3>Categorías Que Trabajo</h3>
+                    <div class="categorias-grid">
+                        <div class="categoria-item">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <span>Cárnicos</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-fish"></i>
+                            <span>Pescados</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-cheese"></i>
+                            <span>Lácteos</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-box"></i>
+                            <span>Enlatados</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Verduras</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Panadería</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-wine-bottle"></i>
+                            <span>Bebidas</span>
+                        </div>
+                        <div class="categoria-item">
+                            <i class="fas fa-pump-soap"></i>
+                            <span>Insumos</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Restaurantes -->
-                <div class="portfolio-item">
-                    <img src="assets/restaurante1.png" alt="Restaurante 1">
-                    <h3>Restaurante X</h3>
-                    <p>Cocina chilena contemporánea.</p>
-                    <a href="https://ejemplo-restaurante1.cl" target="_blank">Visitar sitio</a>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/restaurante2.png" alt="Restaurante 2">
-                    <h3>Restaurante Y</h3>
-                    <p>Parrillada y asados al estilo tradicional.</p>
-                    <a href="https://ejemplo-restaurante2.cl" target="_blank">Visitar sitio</a>
-                </div>
-                <!-- Puedes agregar más elementos duplicando los bloques acima -->
             </div>
         </div>
     </section>
 
-    <!-- Sección Servicios -->
-    <section id="services" class="section">
+    <!-- Restaurantes -->
+    <section id="restaurantes" class="section section-restaurantes">
         <div class="container">
-            <h2>Servicios que ofrezco</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-handshake icon"></i>
-                    <h3>Intermediación comercial</h3>
-                    <p>Actuo como enlace directo entre proveedores y restaurantes, simplificando procesos de compra y venta.</p>
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">🍽️ Para Restaurantes</span>
+                <h2 class="section-title">Simplifica Tus Compras</h2>
+                <p class="section-subtitle">Un solo contacto para todos tus insumos alimenticios</p>
+            </div>
+            <div class="restaurantes-grid">
+                <div class="restaurantes-categorias scroll-reveal">
+                    <h3>Tipos de Clientes</h3>
+                    <div class="clientes-grid">
+                        <div class="cliente-card">
+                            <i class="fas fa-store"></i>
+                            <h4>Restaurantes Independientes</h4>
+                            <p>Menú diverso, pedidos variables, necesidad de flexibilidad.</p>
+                        </div>
+                        <div class="cliente-card">
+                            <i class="fas fa-building"></i>
+                            <h4>Cadenas de Comida</h4>
+                            <p>Volumen alto, frecuencia constante, requerimientos específicos.</p>
+                        </div>
+                        <div class="cliente-card">
+                            <i class="fas fa-hotel"></i>
+                            <h4>Hoteles y Resorts</h4>
+                            <p>Múltiples puntos de consumo, estándares de calidad elevados.</p>
+                        </div>
+                        <div class="cliente-card">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Cafeterías y Bares</h4>
+                            <p>Insumos especializados, entregas frecuentes, márgenes ajustados.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-truck icon"></i>
-                    <h3>Gestión logística</h3>
-                    <p>Coordinación de entregas, seguimiento de pedidos y optimización de rutas.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line icon"></i>
-                    <h3>Asesoría de producto</h3>
-                    <p>Recomiendo los mejores insumos según el menú, temporada y presupuesto del cliente.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-comment-dollar icon"></i>
-                    <h3>Negociación de condiciones</h3>
-                    <p>Obtengo descuentos por volumen, plazos de pago favorables y acuerdos de exclusividad cuando corresponde.</p>
+                <div class="restaurantes-beneficios scroll-reveal">
+                    <h3>¿Qué Ganas Como Restaurante?</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <div>
+                                <strong>Una Sola Factura</strong>
+                                <p>Olvídate de gestionar 10+ proveedores. Un solo documento, un solo pago.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Menos Tiempo de Recepción</strong>
+                                <p>Entregas coordinadas en horarios óptimos. Menos interrupciones en cocina.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-percent"></i>
+                            <div>
+                                <strong>Mejores Precios</strong>
+                                <p>Volumen consolidado = mayor poder de negociación = mejores condiciones.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <strong>Soporte Dedicado</strong>
+                                <p>Un solo contacto para resolver cualquier problema. Sin call centers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-right"></i> Quiero Optimizar Mis Compras
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contact" class="section bg-light">
+    <!-- Testimonios -->
+    <section id="testimonios" class="section section-testimonios bg-gradient">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Tienes un producto que ofrecer o buscas nuevos insumos para tu restaurante? ¡Escríbeme!</p>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">⭐ Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen Mis Clientes</h2>
+                <p class="section-subtitle">Resultados reales de proveedores y restaurantes</p>
+            </div>
+            <div class="testimonios-grid">
+                <div class="testimonio-card scroll-reveal">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>Carlos M.</h4>
+                            <span>Proveedor de Cárnicos</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"Gracias a JVERGARA aumenté mis ventas en un 40% sin tener que contratar más vendedores. Él se encarga de todo el proceso comercial."</p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="testimonio-card scroll-reveal">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>María F.</h4>
+                            <span>Dueña de Restaurante</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"Antes perdía 2 horas diarias recibiendo proveedores. Ahora todo llega coordinado y con una sola factura. Mi equipo está más eficiente."</p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Teléfono (opcional)</label>
-                    <input type="tel" id="phone" name="phone">
+                <div class="testimonio-card scroll-reveal">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>Roberto S.</h4>
+                            <span>Gerente de Cadena de Comida</span>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"La consolidación de pedidos nos ahorró un 15% en costos de insumos. Además, la logística es mucho más simple de gestionar."</p>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section-contacto">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-badge">📬 Hablemos</span>
+                <h2 class="section-title">¿Listo Para Optimizar Tu Cadena de Suministro?</h2>
+                <p class="section-subtitle">Cuéntame tu caso y te contacto dentro de 24 horas</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-info scroll-reveal">
+                    <h3>Información de Contacto</h3>
+                    <div class="contacto-items">
+                        <div class="contacto-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+56 9 XXXX XXXX</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contacto@jvergara.cl</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Santiago, Chile</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario</h4>
+                                <p>Lun - Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <button type="submit" class="btn-primary">Enviar mensaje</button>
-            </form>
-            <div id="form-status" class="form-status"></div>
+                <div class="contacto-form-wrapper scroll-reveal">
+                    <form id="contact-form" class="contacto-form">
+                        <div class="form-group">
+                            <label for="tipo">¿Qué eres?</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="proveedor">Proveedor de alimentos/insumos</option>
+                                <option value="restaurante">Restaurante / Cadena de comida</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame sobre tu negocio y qué necesitas..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> TuNombre. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">J<span class="logo-accent">V</span>ERGARA</span>
+                        <span class="logo-tagline">Conexión Food Service</span>
+                    </div>
+                    <p>Conectando proveedores y restaurantes en Chile. Simplificando la cadena de suministro gastronómico desde 2018.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#como-funciona">Cómo Funciona</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Para</h4>
+                    <ul>
+                        <li><a href="#proveedores">Proveedores</a></li>
+                        <li><a href="#restaurantes">Restaurantes</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +56 9 XXXX XXXX</li>
+                        <li><i class="fas fa-envelope"></i> contacto@jvergara.cl</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Santiago, Chile</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> JVERGARA. Todos los derechos reservados.</p>
+                <p class="footer-credit">Diseñado con <i class="fas fa-heart"></i> por <a href="https://futura-three.vercel.app/" target="_blank">Futura Agencia Digital</a></p>
             </div>
         </div>
     </footer>

@@ -1,0 +1,70 @@
+{
+  "contacto": {
+    "telefono": "+56 9 8300 6611",
+    "email": "armdskd@gmail.com",
+    "linkedin": "https://linkedin.com/in/arangelparra",
+    "instagram": "#",
+    "whatsapp": "https://wa.me/56983006611",
+    "horario": "Lun - Vie: 9:00 - 18:00",
+    "ubicacion": "Santiago, Chile"
+  },
+  "empresa": {
+    "nombre": "Armando Rangel",
+    "titulo": "Vendedor Multimarca Food Service",
+    "anosExperiencia": "8+",
+    "proveedores": "50+",
+    "restaurantes": "100+",
+    "descripcion": "Conectando proveedores y restaurantes en Chile. Simplificando la cadena de suministro gastronómico desde 2018.",
+    "slogan": "Un solo vendedor, múltiples proveedores, cero complejidad"
+  },
+  "testimonios": [
+    {
+      "nombre": "Carlos M.",
+      "rol": "Proveedor de Cárnicos",
+      "texto": "Gracias a Armando aumenté mis ventas en un 40% sin tener que contratar más vendedores. Él se encarga de todo el proceso comercial.",
+      "rating": 5
+    },
+    {
+      "nombre": "María F.", 
+      "rol": "Dueña de Restaurante",
+      "texto": "Antes perdía 2 horas diarias recibiendo proveedores. Ahora todo llega coordinado y con una sola factura. Mi equipo está más eficiente.",
+      "rating": 5
+    },
+    {
+      "nombre": "Roberto S.",
+      "rol": "Gerente de Cadena de Comida", 
+      "texto": "La consolidación de pedidos nos ahorró un 15% en costos de insumos. Además, la logística es mucho más simple de gestionar.",
+      "rating": 4.5
+    }
+  ],
+  "categorias": {
+    "proveedores": ["Cárnicos", "Pescados", "Lácteos", "Enlatados", "Verduras", "Panadería", "Bebidas", "Insumos"],
+    "restaurantes": ["Restaurantes Independientes", "Cadenas de Comida", "Hoteles y Resorts", "Cafeterías y Bares"]
+  },
+  "servicios": [
+    {
+      "icono": "fa-handshake",
+      "titulo": "Intermediación Comercial",
+      "descripcion": "Actúo como enlace directo entre proveedores y restaurantes, simplificando procesos de compra y venta.",
+      "beneficios": ["Negociación de precios", "Condiciones de pago", "Acuerdos de volumen"]
+    },
+    {
+      "icono": "fa-truck-loading",
+      "titulo": "Gestión Logística", 
+      "descripcion": "Coordinación completa de entregas, seguimiento de pedidos y optimización de rutas de distribución.",
+      "beneficios": ["Coordinación de horarios", "Tracking de pedidos", "Optimización de rutas"]
+    },
+    {
+      "icono": "fa-chart-line",
+      "titulo": "Asesoría de Producto",
+      "descripcion": "Recomendación de los mejores insumos según el menú, temporada y presupuesto del restaurante.",
+      "beneficios": ["Selección por concepto", "Relación calidad-precio", "Tendencias del mercado"]
+    },
+    {
+      "icono": "fa-comments-dollar",
+      "titulo": "Negociación de Condiciones",
+      "descripcion": "Obtención de descuentos por volumen, plazos de pago favorables y acuerdos de exclusividad.",
+      "beneficios": ["Descuentos por volumen", "Plazos extendidos", "Exclusividad cuando corresponde"]
+    }
+  ]
+}
